@@ -1,0 +1,49 @@
+{
+  "name": "iwai",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.0",
+    "@testing-library/react": "^10.4.4",
+    "@testing-library/user-event": "^12.0.11",
+    "@types/classnames": "^2.2.10",
+    "@types/jest": "^26.0.4",
+    "@types/lodash": "^4.14.157",
+    "@types/node": "^14.0.19",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "classnames": "^2.2.6",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "lodash": "^4.17.17",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "typescript": "~3.9.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "eslint": "eslint --ext .ts,.tsx src",
+    "eslint-fix": "eslint --fix --ext .ts,.tsx src",
+    "prettier": "prettier --config .prettierrc --check \"src/**/*.ts\" \"src/**/*.tsx\"",
+    "prettier-fix": "prettier --config .prettierrc --write \"src/**/*.ts\" \"src/**/*.tsx\"",
+    "lint": "yarn eslint & yarn prettier & wait",
+    "lint-fix": "yarn eslint-fix & yarn prettier-fix & wait"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
